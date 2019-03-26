@@ -29,6 +29,7 @@ class ExtendedSiteInformation extends SiteInformationForm {
 	
 	/**
 	 * This function saves the new key entered in the basic site setting form
+	 * and inform the user as well
 	 *
 	 * @param      array                                 $form        The form
 	 * @param      \Drupal\Core\Form\FormStateInterface  $form_state  The form state
@@ -39,6 +40,10 @@ class ExtendedSiteInformation extends SiteInformationForm {
 		  ->set('siteapikey', $form_state->getValue('siteapikey'))
 		  ->save();
 		parent::submitForm($form, $form_state);
+	
+		// Retrieving the submitted siteapikey and informing user 
+		$site_api_key_value = \Drupal::config('system.site')->get('siteapikey');    
+ 		drupal_set_message(t('"@site_apikey" ,Your setting is being submitted with site api key!', ['@site_apikey' => $site_api_key_value]));
 	  }
 
 
