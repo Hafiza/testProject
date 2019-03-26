@@ -10,7 +10,9 @@ use Symfony\Component\Routing\RouteCollection;
 class RouteSubscriber extends RouteSubscriberBase {
 
   /**
-   * {@inheritdoc}
+   * This routes to customized extendedSiteInformationForm page
+   *
+   * @param      \Symfony\Component\Routing\RouteCollection  $collection  The collection
    */
   protected function alterRoutes(RouteCollection $collection) {
     if ($route = $collection->get('system.site_information_settings')) 
