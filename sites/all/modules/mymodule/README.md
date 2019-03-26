@@ -45,6 +45,21 @@ http://localhost/page_json/FOOBAR12345/17
 ### Randomly entered the given URL in the questionnaire given (http://localhost/page_json/FOOBAR12345/17)
 * [https://github.com/coderJK/extend_site_setting/blob/master/extend_site_setting.module]
 
+### Total Time to complete task
+* ~35 hrs 
+
+(Thankyou for introducing me to DRUPAL 8) :)
+* Drupal 8 setup with approprite DataBase MySQL with all prerequisites ~6 hrs
+* Understanding the structure of the folder ~4hrs
+* Creating custome module (welcome), testing , verifying ~4hrs
+* Creating mymodule as required in the assigment or test ~6hrs
+* hook_alter for button text change ~4hrs
+* JSON URL creation ~4hrs
+* git hub account ~2hrs
+* Code Reviewing ~1hr
+
+
+
 ## To execute use the url:
 * http://localhost/testProject/admin/config/system/site-information
 * Install module MyModule
