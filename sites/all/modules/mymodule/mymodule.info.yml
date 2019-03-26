@@ -1,0 +1,5 @@
+name: MyModule  
+type: module  
+description: Display a textfield when a user logs in  
+core: 8.x  
+package: Custom 

@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Contains welcome.module.
+ */
+
+function welcome_user_login() {
+	$config = \Drupal::config('welcome.adminsettings');  
+	//print_r($config); die("fsdfds");
+    drupal_set_message($config->get('welcome_message'));  
+
+}
+
+
+/*function welcome_form_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+  //  if ($form_id == 'system-site-information-settings') {
+
+    	$form['actions']['submit']['#value'] = 'Update Configuration';
+
+
+
+ //   var_dump($form_id);
+       // $form['field_user_first_name']['widget'][0]['value']['#title'] = 'First Name';
+        // $form['field_user_last_name']['widget'][0]['value']['#title'] = 'Last Name';
+        // $form['field_user_phone_number']['widget'][0]['value']['#title'] = 'Phone Number';
+   //     $form['submit']['widget'][0]['value']['#title'] = 'Country (of residence)';
+   // }
+}*/
